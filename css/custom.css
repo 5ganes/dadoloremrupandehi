@@ -21,7 +21,7 @@
 
 .nav-main > li ul{display: none; width:240px;}
 .nav-main li:hover ul{display: block;position: absolute;background: #008000}
-.nav-main >li ul li{float: none !important; border-bottom: 1px solid;}
+.nav-main >li ul li{float: none !important; border-bottom: 1px solid #00a400;}
 .nav-main >li ul li:last-child{border-bottom: none} 
 .nav-main >li ul li a{padding: 3px 10px}
 
