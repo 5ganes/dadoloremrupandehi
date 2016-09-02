@@ -18,7 +18,7 @@ function createMenu($parentId, $groupType)
 	{	
 		echo '<li>';
 		?>
-    	<a href="<? if($groupRow['linkType']=='File'){ echo CMS_FILES_DIR.$groupRow['contents']; }else{ echo $groupRow['urlname']; }?>" <? if($groupRow['linkType']=='Link' and $groupRow['urlname']!='home') echo 'target="_blank"';?>><?=$groupRow['name'];?></a>
+    	<a href="<? if($groupRow['linkType']=='File'){ echo CMS_FILES_DIR.$groupRow['contents']; }else if($groupRow['linkType']=='Link' and $groupRow['urlname']!='home'){ echo $groupRow['contents'];}else{ echo $groupRow['urlname']; }?>" <? if($groupRow['linkType']=='Link' and $groupRow['urlname']!='home') echo 'target="_blank"';?>><?=$groupRow['name'];?></a>
 		<?
 
 		if($groupRow['linkType']=="Normal Group" and $groupRow['urlname']!='video-gallery')

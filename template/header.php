@@ -30,7 +30,7 @@
 				<h3>जिल्ला कृषि विकास कार्यालय, रुपन्देही</h3>
 			</div>
 			<div id="header-flag">
-				<img src="images/flagnepal1.gif" style="width: 48%;margin-top: 4%;margin-left: 40%;" />
+				<img src="images/flag.gif" style="width: 48%;margin-top: 4%;margin-left: 40%;" />
 			</div>
 			<div style="clear: both;"></div>
 		</div>	

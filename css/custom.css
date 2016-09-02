@@ -13,23 +13,23 @@
 .page-template-page-scs-php #sidebar-left {width: 25%;}
 .page-template-page-scs-php #sidebar-right {width: 25%;}
 
-#header {background-color:#035b03; padding: 0.7% 0; background-size: 960px 100px;}
-#nav-main {background-color:green;}
+#header {background-color:#217096; padding: 0.7% 0; background-size: 960px 100px;}
+#nav-main {background-color:#217096;}
 #nav-main .nav-main {border-left: 1px solid #023266; border-right: 1px solid #4878ac;}
-#nav-main .nav-main > li, #nav-main .nav-main > ul > .page_item {border-left: 1px solid #005e00; 
-	border-right: 1px solid #005e00;}
+#nav-main .nav-main > li, #nav-main .nav-main > ul > .page_item {border-left: 1px solid #1D6081; 
+	border-right: 1px solid #1D6081;}
 
 .nav-main > li ul{display: none; width:240px;}
-.nav-main li:hover ul{display: block;position: absolute;background: #008000}
-.nav-main >li ul li{float: none !important; border-bottom: 1px solid #00a400;}
+.nav-main li:hover ul{display: block;position: absolute;background: #217096}
+.nav-main >li ul li{float: none !important; border-bottom: 1px solid #1D6081;}
 .nav-main >li ul li:last-child{border-bottom: none} 
 .nav-main >li ul li a{padding: 3px 10px}
 
 #top-bar {background-color:#222222;}
-#bottom-bar {background-color:#2f5cd8;}
+#bottom-bar {background-color:#217096;}
 .blog-view, .comment-author-admin > .comment-body, .bypostauthor > .comment-body {border-top: 6px solid #2A5A8E;}
 .page-nav > *, .comment-nav > *, .author-info .title, .comment-reply-link, .widget-title,
-.widget_search .search-submit, .widget_calendar caption {background-color:#008000;}
+.widget_search .search-submit, .widget_calendar caption {background-color:#217096;}
 .genericon {color:#2A5A8E;}
 a {color:#0E4D7A;}
 a:hover {color:#0000EE;}
