@@ -1,8 +1,10 @@
 <style type="text/css">
   .slider-prev{background-image: url('images/slider-prev.png')}
-  .slider-next{background-image: url('images/slider-next.png')
+  .slider-next{background-image: url('images/slider-next.png')}
+  .hot-news a:hover{color:#000;}
 </style>
 <div id="content" class="cf">
+  
   <div id="slider" class="slider-content">
     <div id="basic-slider" style="height: 327.958px; max-width: 480px; position: relative;">  
       <ul class="bjqs" style="height: 327.958px; width: 100%; display: block;">
@@ -26,6 +28,20 @@
       </ul>
     </div>
   </div>  
+  
+  <article id="post-77" class="single-view post-77 page type-page status-publish" style="padding: 6px">
+    <header class="entry-header cf" style="margin-bottom: 0">
+      <?php $hot=$conn->fetchArray($groups->getById(HOT_NEWS));?>
+      <div style="float:left;width:19%;font-size: 15px"><b><u>Hot News: </u></b></div>
+      <div class="hot-news" style="float: left;width: 81%;font-size: 14px">
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="5">
+          <a href="<?=$hot['urlname']?>"><?=$hot['shortcontents'];?></a>
+        </marquee>
+      </div>
+      <div style="clear:both"></div>
+    </header>
+  </article>
+
   <article id="post-77" class="single-view post-77 page type-page status-publish hentry">
     <header class="entry-header cf">
       <?php $welcome=$conn->fetchArray($groups->getById(WELCOME));?>
@@ -42,26 +58,29 @@
     <footer class="entry-footer cf">
     </footer>
   </article>
+  
   <div id="comment-area">
     <div id="comments">
     </div>
   </div>
+
 </div>
 
 <div id="sidebar-right" class="sidebar cf">
   <div id="widgets-wrap-sidebar-right">
-    <div id="text-9" class="widget-sidebar frontier-widget widget_text">
-      <?php
-      $info_officer=$groups->getById(INFO_OFFICER); $info_officer=$conn->fetchArray($info_officer);
-      ?>
-      <h4 class="widget-title"><?php echo $info_officer['name'];?></h4>
-      <div class="textwidget" style="text-align:justify">
-        <a href="<?=$info_officer['urlname']; ?>">
-        <img style="float:left; margin:3px 7px 0 0" width="105" height="105" src="<?=CMS_GROUPS_DIR.$info_officer['image'];?>" />
-        </a>
-        <?=$info_officer['shortcontents']; ?>
-        <br>
-        <a style="font-weight: bold;font-size: 15px;float: right;" href="<?=$info_officer['urlname']; ?>">read more...</a>
+    
+    <div id="notice_board_widget-2" class="widget-sidebar frontier-widget widget_notice_board_widget">
+      <h4 class="widget-title">सूचना </h4>
+      <div class="msnb_notice scroll-up">
+        <ul class="notice-list">
+          <?php
+          $news=$groups->getByParentId(NEWS);
+          while($newsGet=$conn->fetchArray($news)){?>
+            <li>
+              <a href="<?=$newsGet['urlname'];?>"><?=$newsGet['name'];?></a>
+            </li>
+          <?php }?>
+        </ul>
       </div>
     </div>
     

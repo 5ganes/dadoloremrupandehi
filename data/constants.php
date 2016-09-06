@@ -35,6 +35,7 @@ define("PHOTO_GALLERY", 356);
 define("PUBLICATION", 338);
 define("YOUTUBE", 373);
 define("VIDEO_GALLERY", 386);
+define("HOT_NEWS", 523);
 
 ///////////////GENERAL CLIENT SIDE CONSTANTS///////////////////
 
