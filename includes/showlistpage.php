@@ -3,7 +3,7 @@
 <div id="content" class="cf" style="width:75%">
 <?php //include("includes/breadcrumb.php"); ?>
 <article class="single-view post-77 page type-page status-publish hentry">
-    <header class="entry-header cf"><u><h2 class="entry-title"><?php echo $pageName; ?></h2></u></header>
+    <header class="entry-header cf"><h2 class="entry-title"><?php if($lan!='en') echo $pageName; else echo $pageNameEn;?></h2></header>
     <div class="entry-byline cf">
     </div>
     <div class="entry-content cf">
@@ -12,8 +12,13 @@
 	$sql = "SELECT * FROM groups WHERE parentId = '$pageId' ORDER BY id ASC";
 	$newsql = $sql;
 	$limit = LISTING_LIMIT;
+
+	//get alias name
+	$alias=$groups->getById($pageId);
+	$aliasGet=$conn->fetchArray($alias);
+
 	include("includes/pagination.php");
-	$return = Pagination($sql, "");
+	$return = Pagination($sql, "", $limit, $aliasGet['urlname']);
 	$arr = explode(" -- ", $return);
 	$start = $arr[0];
 	$pagelist = $arr[1];
