@@ -5,14 +5,14 @@
 	<meta name="viewport" content="initial-scale=1.0">
 	<title>Dado Rupandehi - Home</title>
 	<?php include('baselocation.php'); ?>
-	<script id="facebook-jssdk" src="js/sdk.js"></script>
+	
 
 	<link rel="stylesheet" id="frontier-icon-css" href="css/genericons.css" type="text/css" media="all">
 	<link rel="stylesheet" id="frontier-main-css" href="css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" id="frontier-responsive-css" href="css/responsive.css" type="text/css" media="all">
 	<link rel="icon" href="images/logo-ne.png" type="image/x-icon">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+	
 
 	<link rel="stylesheet" href="css/custom.css" type="text/css" media="all">
 </head>

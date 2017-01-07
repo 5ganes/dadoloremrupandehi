@@ -5,28 +5,8 @@
 </style>
 <div id="content" class="cf">
   
-  <div id="slider" class="slider-content">
-    <div id="basic-slider" style="height: 327.958px; max-width: 480px; position: relative;">  
-      <ul class="bjqs" style="height: 327.958px; width: 100%; display: block;">
-        <?php
-        $slide=$groups->getByParentId(SLIDER);
-        while($slideGet=$conn->fetchArray($slide)){?>
-          <li class="bjqs-slide" style="">
-            <img class="slider-element" src="<?=CMS_GROUPS_DIR.$slideGet['image'];?>" alt="">
-            <p class="slider-element"><?=$slideGet['shortcontents'];?></p>  
-            <p class="bjqs-descript"><?=$slideGet['shortcontents'];?></p>
-          </li>
-        <?php }?>
-      </ul>
-      <ul class="bjqs-controls v-centered">
-        <li class="bjqs-prev">
-          <a href="#" data-direction="previous" style="top: 43.5294%;"><span class="slider-prev"></span></a>
-        </li>
-        <li class="bjqs-next">
-          <a href="#" data-direction="forward" style="top: 43.5294%;"><span class="slider-next"></span></a>
-        </li>
-      </ul>
-    </div>
+  <div class="slider">
+      <?php require_once('slider/slider.php'); ?>
   </div>  
   
   <article id="post-77" class="single-view post-77 page type-page status-publish" style="padding: 6px">
@@ -108,13 +88,6 @@
                       <span><?=$galleryGet['shortcontents']?></span>
                     </div>
                   </li>
-
-                  <!-- <li class="ewic-slider" style="float: none; list-style: none; position: absolute; width: 200px; z-index: 0; display: none;">
-                    <a href="./index_files/RAJENDRA-LAMICHHANE-2.jpg" title="RAJENDRA LAMICHHANE (2)" rel="ewicwidgetprettyPhoto[75]"><img title="RAJENDRA LAMICHHANE (2)" class="ewic-wid-imgs" src="./index_files/RAJENDRA-LAMICHHANE-2.jpg"></a>
-                    <div class="ewic-caption" style="display: block; overflow: hidden; height: 1px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;"><span>RAJENDRA LAMICHHANE (2)</span>
-                    </div>
-                  </li> -->
-
                 <? }?>
               </ul>
             </div>

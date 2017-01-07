@@ -37,41 +37,19 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$('.menu-item-has-children').click(function(){
-				$('.nav-main > .menu-item-has-children').not(this).removeClass('toggle-on');
-				$(this).not().parents().removeClass('toggle-on');
-				$(this).toggleClass('toggle-on');
-			});
-		});
-	</script>
+	<!-- slider jquery include -->
+	<script src="slider/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="slider/js/jssor.slider.mini.js"></script>
+	<script type="text/javascript" src="slider/js/script.js"></script>
+	<!-- slider jquery include end -->
+
 	<link rel="stylesheet" id="msnb_notice_style-css" href="css/msnb_style.css" type="text/css" media="all">
-	<link rel="stylesheet" id="ewic-frontend-css-css" href="css/frontend.css" type="text/css" media="all">
+	<<!-- link rel="stylesheet" id="ewic-frontend-css-css" href="css/frontend.css" type="text/css" media="all"> -->
 	<link rel="stylesheet" id="ewic-bxslider-css-css" href="css/jquery.bxslider.css" type="text/css" media="all">
-	<link rel="stylesheet" id="ewic-prettyphoto-css-css" href="css/prettyPhoto.css" type="text/css" media="all">
-	<script type="text/javascript" src="js/bjqs-1.3.min.js"></script>
-	<script type="text/javascript" src="js/wp-embed.min.js"></script>
+	<!-- <link rel="stylesheet" id="ewic-prettyphoto-css-css" href="css/prettyPhoto.css" type="text/css" media="all"> -->
+	<!-- <script type="text/javascript" src="js/bjqs-1.3.min.js"></script> -->
+	
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript">
-		jQuery( document ).ready( function($) {
-			$( '#basic-slider' ).bjqs( {
-				animtype : 'fade',
-				width : 480,
-				height : 340,
-				animduration : 500,
-				animspeed : 5000,
-				automatic : true,
-				showcontrols : true,
-				nexttext : '<span class="slider-next"></span>',
-				prevtext : '<span class="slider-prev"></span>',
-				showmarkers : false,
-				usecaptions : true,
-				responsive : true
-			} );
-		} );
-	</script>
+	<!-- <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> -->
 </body>
 </html>
