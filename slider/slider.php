@@ -17,7 +17,8 @@
             $slide=$groups->getByParentId(SLIDER);
             while($slideGet=$conn->fetchArray($slide)){?>
                 <div>
-                    <img u="image" src="<?php echo CMS_GROUPS_DIR.$slideGet['image'];?>" />
+                    <img u="image" src="<?php echo CMS_GROUPS_DIR.$slideGet['image'];?>" /><br>
+                    <p style="margin-top:50%;display: block;position: fixed;background: white;padding: 4px 10px;"><?php echo $slideGet['shortcontents'] ?></p>
                 </div>
             <?php }?>
         </div>
