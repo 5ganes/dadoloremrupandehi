@@ -9,7 +9,7 @@
     <div class="entry-content cf">
 	<?php
 	$pagename = "index.php?linkId=". $pageId ."&";
-	$sql = "SELECT * FROM groups WHERE parentId = '$pageId' ORDER BY id ASC";
+	$sql = "SELECT * FROM groups WHERE parentId = '$pageId' ORDER BY weight ASC";
 	$newsql = $sql;
 	$limit = LISTING_LIMIT;
 
